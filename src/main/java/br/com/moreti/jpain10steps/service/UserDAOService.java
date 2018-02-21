@@ -13,7 +13,7 @@ public class UserDAOService {
 
     @PersistenceContext
     private EntityManager entityManager;
-    
+
     public long insert(User user) {
         entityManager.persist(user);
         return user.getId();
